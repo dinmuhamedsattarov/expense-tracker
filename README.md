@@ -1,5 +1,3 @@
-Here's the README code formatted exactly like your URL Shortener project:
-
 ```markdown
 # Expense Tracker
 
@@ -7,72 +5,57 @@ A full-stack web application for tracking personal expenses built with FastAPI b
 
 ## Features
 
-- Add Expenses - Simple form to record daily expenses
-- View All Expenses - Clean interface to see spending history  
-- Delete Expenses - Remove unwanted entries with one click
-- Real-time Statistics - Automatic total spending calculation
-- Category Management - Organize expenses by type
-- Responsive Design - Works on desktop and mobile devices
+- Add expenses with title, amount, and category
+- View all expenses in organized list
+- Delete unwanted expenses with one click
+- Real-time spending statistics
+- Responsive design for all devices
 
 ## Installation
 
 1. **Clone the repository**
-   ```
-   git clone https://github.com/dinmuhamedsattarov/expense-tracker.git
-   cd expense-tracker
-   ```
+```bash
+git clone https://github.com/dinmuhamedsattarov/expense-tracker.git
+```
 
-2. **Create virtual environment**
-   ```
-   python -m venv venv
-   source venv/bin/activate
-   ```
+2. **Navigate to project directory**
+```bash
+cd expense-tracker
+```
 
-3. **Install dependencies**
-   ```
-   pip install -r requirements.txt
-   ```
+3. **Create virtual environment**
+```bash
+python -m venv venv
+```
 
-4. **Run the backend server**
-   ```
-   uvicorn main:app --reload --port 8000
-   ```
+4. **Activate virtual environment**
+```bash
+source venv/bin/activate
+```
 
-5. **Open the frontend**
-   - Open `index.html` in your web browser
-   - Or run: `open index.html` (Mac)
+5. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+6. **Run the backend server**
+```bash
+uvicorn main:app --reload --port 8000
+```
+
+7. **Open the frontend**
+```bash
+open index.html
+```
 
 ## Basic Usage
 
-**Add Expenses**
-Visit the application and use the form to add new expenses with title, amount, and category.
+### Track Your Expenses
+Open the application and use the form to add your daily expenses with categories and amounts.
 
-**View Expenses**  
-See all your expenses displayed in an organized list with real-time statistics.
+## Access Points
 
-**API Documentation**
-Access interactive API docs at: http://localhost:8000/docs
-
-## Project Structure
-
+- **Main Application**: Open `index.html` in your browser
+- **API Documentation**: http://localhost:8000/docs/
+- **Raw API Endpoint**: http://localhost:8000/expenses/
 ```
-expense-tracker/
-├── index.html
-├── style.css
-├── script.js
-├── main.py
-├── database.py
-├── models.py
-├── requirements.txt
-└── routers/
-    └── expenses.py
-```
-
-## API Endpoints
-
-- `GET /expenses/` - Retrieve all expenses
-- `POST /expenses/` - Create a new expense  
-- `GET /expenses/{id}` - Get specific expense
-- `DELETE /expenses/{id}` - Delete an expense
-```
-
