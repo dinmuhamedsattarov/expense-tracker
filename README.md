@@ -1,4 +1,3 @@
-```markdown
 # Expense Tracker
 
 A full-stack web application for tracking personal expenses built with FastAPI backend and vanilla JavaScript frontend.
@@ -23,27 +22,23 @@ git clone https://github.com/dinmuhamedsattarov/expense-tracker.git
 cd expense-tracker
 ```
 
-3. **Create virtual environment**
+3. **Create and activate virtual environment**
 ```bash
 python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 ```
 
-4. **Activate virtual environment**
-```bash
-source venv/bin/activate
-```
-
-5. **Install dependencies**
+4. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-6. **Run the backend server**
+5. **Run the backend server**
 ```bash
 uvicorn main:app --reload --port 8000
 ```
 
-7. **Open the frontend**
+6. **Open the frontend**
 ```bash
 open index.html
 ```
@@ -58,4 +53,4 @@ Open the application and use the form to add your daily expenses with categories
 - **Main Application**: Open `index.html` in your browser
 - **API Documentation**: http://localhost:8000/docs/
 - **Raw API Endpoint**: http://localhost:8000/expenses/
-```
+
